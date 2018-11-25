@@ -8,6 +8,7 @@ int main()
 	int parition(vector<int>&vec, int low, int high);
 	void select_sort(vector<int>&vec);
 	void swap(int &, int &);
+	void display(vector<int>vec);
 	cout << "请输入要排序数据的长度：" << endl;
 	cin >> N;
 	vector<int>vec;
@@ -18,10 +19,8 @@ int main()
 		vec.push_back(temp);
 	}
 	//	myQuick_sort(vec, 0, N - 1);
-	for (int i = 0; i < vec.size(); i++)
-	{
-		cout << vec[i] << " ";
-	}
+	select_sort(vec);
+	display(vec);
 	return 0;
 }
 /*冒泡排序*/
@@ -43,18 +42,22 @@ void buble_sort(vector<int>vec){
 	}
 	}
 	/**/
-/*快速排序*/
 	/*选择排序*/
 	void select_sort(vector<int>&vec)
 	{
-		 int temp=65535;
 		 for (int j = 0; j < vec.size(); j++){
-			 for (int i = j+1; i < vec.size()-j; i++)
+			 int k = j,temp=65535;
+			 for (int i = j; i < vec.size(); i++)
 			 {
 				 if (vec[i] < temp)
+				 {
 					 temp = vec[i];
+					 k = i;
+				 }
+				
 			 }
-			 swap(vec[j],temp);
+			 swap(vec[j], vec[k]);
+			 
 		 }
 	}
 	void swap(int &a, int &b)
@@ -80,10 +83,18 @@ void buble_sort(vector<int>vec){
 		vec[j] = temp;
 		return j;
 	}
+	/*快速排序*/
 	void myQuick_sort(vector<int>&vec, int low, int high){
 		if (low < high){
 			int num = parition(vec, low, high);
 			parition(vec, low, num );
 			parition(vec, num , high);
+		}
+	}
+	void display(vector<int>vec)
+	{
+		for (int i = 0; i < vec.size(); i++)
+		{
+			cout << vec[i] << " ";
 		}
 	}
