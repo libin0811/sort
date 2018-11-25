@@ -5,7 +5,8 @@ int main()
 {
 	int N,temp;
 	bool flag;
-	int parition(vector<int>vec, int low, int high);
+	void myQuick_sort(vector<int>&vec, int low, int high);
+	int parition(vector<int>&vec, int low, int high);
 	void swap(int &,int &);
 	cout << "请输入要排序数据的长度：" << endl;
 	cin >> N;
@@ -34,7 +35,7 @@ int main()
 	}
 	*/
 /*快速排序*/
-
+	myQuick_sort(vec, 0, N - 1);
 	for (int i = 0; i < vec.size(); i++)
 	{
 		cout << vec[i] << " ";
@@ -48,26 +49,26 @@ int main()
 		a = b;
 		b = temp;
 	}
-	int parition(vector<int>vec, int low,int high)
+	int parition(vector<int>&vec, int low,int high)
 	{
 		int temp = vec[low];
 		int i = low, j = high;
 		while (i < j)
 		{
-			while (i < j&&vec[j] > temp)j--;
+			while (i < j&&vec[j] > temp){ j--; }
 			if (i < j){ vec[i] = vec[j]; i++; }
-			while (i < j&&vec[i] < temp)i++;
+			while (i < j&&vec[i] < temp){ i++; }
 			if (i < j){
 				vec[j] = vec[i]; j--;
 			}
 		}
-		vec[j + 1] = temp;
+		vec[j] = temp;
 		return j;
 	}
-	void Quick_sort(vector<int>vec, int low, int high){
+	void myQuick_sort(vector<int>&vec, int low, int high){
 		if (low < high){
 			int num = parition(vec, low, high);
-			parition(vec, low, num - 1);
-			parition(vec, num + 1, high);
+			parition(vec, low, num );
+			parition(vec, num , high);
 		}
 	}
