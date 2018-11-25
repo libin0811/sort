@@ -1,15 +1,15 @@
-﻿生成启动时间为 2018/11/24 20:13:26。
-     1>项目“d:\用户目录\我的文档\visual studio 2013\Projects\buble_sort\buble_sort\buble_sort.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2018/11/25 8:01:03。
+     1>项目“C:\Users\Administrator\Desktop\sort_algorithm\sort\buble_sort\buble_sort.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
-     1>d:\用户目录\我的文档\visual studio 2013\projects\buble_sort\buble_sort\main.cpp(43): warning C4018: “<”: 有符号/无符号不匹配
-     1>d:\用户目录\我的文档\visual studio 2013\projects\buble_sort\buble_sort\main.cpp(7): warning C4101: “flag”: 未引用的局部变量
+     1>c:\users\administrator\desktop\sort_algorithm\sort\buble_sort\main.cpp(39): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\administrator\desktop\sort_algorithm\sort\buble_sort\main.cpp(7): warning C4101: “flag”: 未引用的局部变量
        Link:
-         D:\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"d:\用户目录\我的文档\visual studio 2013\Projects\buble_sort\Debug\buble_sort.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"d:\用户目录\我的文档\visual studio 2013\Projects\buble_sort\Debug\buble_sort.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"d:\用户目录\我的文档\visual studio 2013\Projects\buble_sort\Debug\buble_sort.lib" /MACHINE:X86 Debug\main.obj
-         buble_sort.vcxproj -> d:\用户目录\我的文档\visual studio 2013\Projects\buble_sort\Debug\buble_sort.exe
-     1>已完成生成项目“d:\用户目录\我的文档\visual studio 2013\Projects\buble_sort\buble_sort\buble_sort.vcxproj”(Build 个目标)的操作。
+         D:\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator\Desktop\sort_algorithm\sort\Debug\buble_sort.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Administrator\Desktop\sort_algorithm\sort\Debug\buble_sort.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Administrator\Desktop\sort_algorithm\sort\Debug\buble_sort.lib" /MACHINE:X86 Debug\main.obj
+         buble_sort.vcxproj -> C:\Users\Administrator\Desktop\sort_algorithm\sort\Debug\buble_sort.exe
+     1>已完成生成项目“C:\Users\Administrator\Desktop\sort_algorithm\sort\buble_sort\buble_sort.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:03.18
+已用时间 00:00:04.05
